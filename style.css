@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.aboutPage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 80px;
+  font-family: "Montserrat";
+}
+.aboutPage .aboutPage__main {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aboutPage .aboutPage__main .aboutPage__main__right__btn {
+  width: 50%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(255, 52, 77);
+  color: rgb(255, 52, 77);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 5px;
+  transition: 0.5s;
+  animation: pulse 3s infinite;
+}
+.aboutPage .aboutPage__main .aboutPage__main__right__btn1 {
+  display: none;
+}
+.aboutPage .aboutPage__main .aboutPage__main__right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.aboutPage .aboutPage__main .aboutPage__main__right .aboutPage__main__right__img {
+  width: 80%;
+  height: 350px;
+  background-color: red;
+  background-image: url(./img/main__photo.png);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+}
+.aboutPage .aboutPage__main .aboutPage__main__left {
+  width: 50%;
+  height: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+.aboutPage .aboutPage__main .aboutPage__main__left .aboutPage__main__left__yantarne {
+  font-weight: 600;
+}
+.aboutPage .aboutPage__text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+}
+.aboutPage .aboutPage__text .aboutPage__text__red {
+  color: rgb(255, 52, 77);
+}
+
+.aboutPage .aboutPage__main .aboutPage__main__right__btn:hover {
+  background-color: rgb(255, 52, 77);
+  color: white;
+  animation: none;
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+  }
+  40% {
+    -moz-box-shadow: 0 0 0 20px rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 20px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .aboutPage {
+    padding: 20px 10px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .aboutPage .aboutPage__main .aboutPage__main__right {
+    display: none;
+  }
+  .aboutPage .aboutPage__main .aboutPage__main__right__btn1 {
+    display: flex;
+    margin-top: 20px;
+  }
+  .aboutPage .aboutPage__main .aboutPage__main__left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .aboutPage {
+    padding: 30px 50px;
+  }
+  .aboutPage .aboutPage__main .aboutPage__main__left {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .aboutPage .aboutPage__main .aboutPage__main__left {
+    font-size: 18px;
+  }
+  .aboutPage .aboutPage__main .aboutPage__main__right__btn1 {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .aboutPage .aboutPage__main .aboutPage__main__left {
+    font-size: 16px;
+  }
+  .aboutPage {
+    padding: 5px 5px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
