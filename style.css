@@ -21,6 +21,18 @@
   justify-content: space-between;
   align-items: center;
 }
+.aboutPage .aboutPage__main .aboutPage__main__right__img {
+  width: 80%;
+  height: 350px;
+  background-color: red;
+  background-image: url(./img/main__photo.png);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+}
+.aboutPage .aboutPage__main .aboutPage__main__right__img1 {
+  display: none;
+}
 .aboutPage .aboutPage__main .aboutPage__main__right__btn {
   width: 50%;
   height: 70px;
@@ -50,15 +62,6 @@
   align-items: center;
   padding-bottom: 50px;
 }
-.aboutPage .aboutPage__main .aboutPage__main__right .aboutPage__main__right__img {
-  width: 80%;
-  height: 350px;
-  background-color: red;
-  background-image: url(./img/main__photo.png);
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 30px;
-}
 .aboutPage .aboutPage__main .aboutPage__main__left {
   width: 50%;
   height: 100%;
@@ -84,6 +87,87 @@
   animation: none;
 }
 
+.aboutPage__poup {
+  font-family: "Montserrat";
+  position: fixed;
+  width: 300px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  top: 5vh;
+  left: calc((100% - 300px) / 2);
+  background-color: white;
+  z-index: 5;
+  box-shadow: 0 0 5px rgb(255, 52, 77);
+  border-radius: 20px;
+}
+.aboutPage__poup .aboutPage__poup__close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.aboutPage__poup .aboutPage__poup__text {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.aboutPage__poup .aboutPage__poup__banks {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.aboutPage__poup .aboutPage__poup__banks .aboutPage__poup__banks__img {
+  width: 60px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid #333;
+}
+.aboutPage__poup .aboutPage__poup__banks .aboutPage__poup__banks__img .logo-to-pay {
+  width: 56px;
+  height: 46px;
+  border-radius: 7px;
+}
+.aboutPage__poup .aboutPage__poup__text2 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  margin: 10px;
+}
+.aboutPage__poup .number__help {
+  padding: 0 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6vh;
+  background-color: #e4e4e4;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 5px;
+  font-family: "Montserrat";
+}
+.aboutPage__poup .number__help .btn__clipboard {
+  width: 18%;
+  height: 90%;
+  font-size: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 0px;
+  background-color: transparent;
+  font-family: "Montserrat";
+}
+.aboutPage__poup .number__help .img__clipboard {
+  width: 100%;
+  height: 100%;
+}
+
 @keyframes pulse {
   0% {
     -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
@@ -104,8 +188,21 @@
   }
 }
 @media screen and (max-width: 900px) {
+  .aboutPage {
+    padding: 30px 50px;
+    height: 160vh;
+  }
+  .aboutPage .aboutPage__main {
+    min-height: 110vh;
+    flex-direction: column;
+  }
   .aboutPage .aboutPage__main .aboutPage__main__right {
     display: none;
+  }
+  .aboutPage .aboutPage__main .aboutPage__main__right__img1 {
+    display: flex;
+    height: 400px;
+    width: 90%;
   }
   .aboutPage .aboutPage__main .aboutPage__main__right__btn1 {
     display: flex;
@@ -119,9 +216,6 @@
     align-items: center;
     text-align: center;
   }
-  .aboutPage {
-    padding: 30px 50px;
-  }
   .aboutPage .aboutPage__main .aboutPage__main__left {
     font-size: 22px;
   }
@@ -130,16 +224,29 @@
   .aboutPage .aboutPage__main .aboutPage__main__left {
     font-size: 18px;
   }
+  .aboutPage .aboutPage__main .aboutPage__main__right__img1 {
+    width: 100%;
+  }
   .aboutPage .aboutPage__main .aboutPage__main__right__btn1 {
     width: 80%;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 499px) {
   .aboutPage .aboutPage__main .aboutPage__main__left {
     font-size: 16px;
   }
+  .aboutPage .aboutPage__main .aboutPage__main__right__img1 {
+    width: 400px;
+    height: 350px;
+  }
   .aboutPage {
     padding: 5px 5px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .aboutPage .aboutPage__main .aboutPage__main__right__img1 {
+    width: 300px;
+    height: 250px;
   }
 }
 
