@@ -90,17 +90,20 @@
 .aboutPage__poup {
   font-family: "Montserrat";
   position: fixed;
-  width: 300px;
+  width: 400px;
   height: 90vh;
   display: flex;
   flex-direction: column;
   padding: 30px;
   top: 5vh;
-  left: calc((100% - 300px) / 2);
+  left: calc((100% - 400px) / 2);
   background-color: white;
   z-index: 5;
   box-shadow: 0 0 5px rgb(255, 52, 77);
   border-radius: 20px;
+}
+.aboutPage__poup .aboutPage__poup__qrKod {
+  display: flex;
 }
 .aboutPage__poup .aboutPage__poup__close {
   width: 20px;
@@ -123,11 +126,17 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.aboutPage__poup .aboutPage__poup__banks .box-to-pay2 {
+  background-color: #333;
+}
 .aboutPage__poup .aboutPage__poup__banks .aboutPage__poup__banks__img {
   width: 60px;
   height: 50px;
   border-radius: 10px;
   border: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .aboutPage__poup .aboutPage__poup__banks .aboutPage__poup__banks__img .logo-to-pay {
   width: 56px;
@@ -247,6 +256,18 @@
   .aboutPage .aboutPage__main .aboutPage__main__right__img1 {
     width: 300px;
     height: 250px;
+  }
+  .aboutPage__poup {
+    width: 300px;
+    left: calc((100% - 300px) / 2);
+    height: 40vh;
+    top: 30vh;
+  }
+  .aboutPage__poup .aboutPage__poup__qrKod {
+    display: none;
+  }
+  .aboutPage__poup .aboutPage__poup__text {
+    display: none;
   }
 }
 
